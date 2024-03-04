@@ -14,8 +14,8 @@ public class ConfirmedOrder {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
+    //confusion regarding Generated Value
     @Column(name = "orderNumber")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int orderNumber;
 
     @Column(name = "productName")
