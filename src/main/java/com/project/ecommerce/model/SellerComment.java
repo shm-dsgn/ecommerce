@@ -14,7 +14,7 @@ public class SellerComment {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "title")
     private String title;

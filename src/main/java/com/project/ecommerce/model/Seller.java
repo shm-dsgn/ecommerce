@@ -15,7 +15,7 @@ public class Seller {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
@@ -32,7 +32,7 @@ public class Seller {
     @OneToMany
     private List<SellerComment> sellerComment;
 
-    public Seller(String name, String profilePictureUrl, String eMail, Date createDate) {
+    public Seller(String name, String profilePictureUrl, String email, Date createDate) {
         this.name = name;
         this.profilePictureUrl = profilePictureUrl;
         this.email = email;

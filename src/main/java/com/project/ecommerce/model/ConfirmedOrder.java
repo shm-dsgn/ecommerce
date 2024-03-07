@@ -12,11 +12,11 @@ public class ConfirmedOrder {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     //confusion regarding Generated Value
     @Column(name = "orderNumber")
-    private int orderNumber;
+    private Long orderNumber;
 
     @Column(name = "productName")
     private String productName;

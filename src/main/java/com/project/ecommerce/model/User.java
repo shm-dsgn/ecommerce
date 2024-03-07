@@ -17,7 +17,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @NotNull(message = "{com.eCommerceProject.notnull.username.message}")
     @Column(name = "username")

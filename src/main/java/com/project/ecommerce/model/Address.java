@@ -12,7 +12,7 @@ public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
 
     @Column(name = "country")
     private String country;
@@ -24,7 +24,7 @@ public class Address {
     private String district;
 
     @Column(name = "apartmentNumber")
-    private int apartmentNumber;
+    private Long apartmentNumber;
 
     @Column(name = "street")
     private String street;

@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 public class Cart {
 
     @Id
-    private Integer id;
+    private Long id;
 
     @Column(name = "quantity")
     private int quantity;
