@@ -1,4 +1,4 @@
-package com.project.ecommerce.api;
+package com.project.ecommerce.controller;
 
 import com.project.ecommerce.dto.viewDto.UserViewDto;
 import com.project.ecommerce.model.User;
@@ -24,6 +24,7 @@ public class UserController {
     @Autowired
     private final UserService userService;
 
+    // adding new user
     @PostMapping("add")
     public ResponseEntity<?> add(@RequestBody @Valid User user) {
         userService.add(user);
