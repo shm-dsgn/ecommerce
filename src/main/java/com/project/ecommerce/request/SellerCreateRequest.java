@@ -16,14 +16,14 @@ public class SellerCreateRequest {
 
     @NotNull
     @Email
-    private String eMail;
+    private String email;
 
     private Date createDate;
 
-    public SellerCreateRequest(String name, String profilePictureUrl, String eMail, Date createDate) {
+    public SellerCreateRequest(String name, String profilePictureUrl, String email, Date createDate) {
         this.name = name;
         this.profilePictureUrl = profilePictureUrl;
-        this.eMail = eMail;
+        this.email = email;
         this.createDate = createDate;
     }
 }
